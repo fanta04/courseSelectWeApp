@@ -1,0 +1,46 @@
+
+<view class="waveWrapper waveAnimation" style='background-color:{{evening}}'>
+  <view class="word">我的课程</view>
+  <view class="waveWrapperInner bgTop">
+    <image class="wave waveTop" src="../../img/wave-top.png"></image>
+  </view>
+  <view class="waveWrapperInner bgBottom">
+    <image class="wave waveBottom" src="../../img/wave-bot.png"></image>
+  </view>
+</view>
+
+<scroll-view scroll-y="true" class="scroll" refresher-enabled="true" bindrefresherrefresh="refresh" bindrefresherabort="refreshAbort">
+<block wx:for="{{courses}}">
+  <van-cell  
+    icon="label-o" 
+    use-label-slot="true" 
+    size="large" 
+    >
+    <view slot="title">
+      <view class="titleview">
+        <view>
+          <text> {{item.courseName}} </text>
+        </view>
+      </view>
+    </view>
+
+    <view slot="label" 
+      data-courseName="{{item.courseName}}"
+      data-index="{{index}}"
+      bindtap="into_coursePage"
+      class="detail">
+      <van-icon name="manager" size="25rpx"/>
+      <text> 授课老师 : {{item.teacherName}}\n </text>
+      <van-icon name="clock" size="25rpx"/>
+      <text> 上课时间 : {{item.time}}\n</text>
+      <van-icon name="award" size="25rpx"/>
+      <text> 课程学分 : {{item.xuefen}}\n</text>
+      <van-icon name="friends" size="25rpx"/>
+      <text> 剩余名额 : {{item.num}}</text>
+    </view>
+    <view class="btn">
+            <van-button id="{{item.courseName}}" size="normal" color="#3b87dd" disabled="{{disable}}" bind:click="quit">退选</van-button>
+          </view>
+  </van-cell>
+</block>
+</scroll-view>

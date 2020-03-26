@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-row": "vant-weapp/row",
+    "van-col": "vant-weapp/col",
+    "van-button": "vant-weapp/button",
+    "van-cell": "vant-weapp/cell",
+    "van-field":"vant-weapp/field",
+    "van-cell-group": "vant-weapp/cell-group",
+    "van-dialog": "vant-weapp/dialog",
+    "van-icon": "vant-weapp/icon",
+    "van-radio": "vant-weapp/radio",
+    "van-radio-group": "vant-weapp/radio-group"
+  }
+}

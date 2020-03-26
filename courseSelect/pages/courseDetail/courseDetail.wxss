@@ -1,0 +1,221 @@
+#titleview {
+  width: 700rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+#coursename {
+  width: 600rpx;
+  margin-left: 50rpx;
+  margin-top: 70rpx;
+  font-size: 60rpx;
+}
+#tagsview {
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+.singletag {
+  margin-right: 20rpx;
+}
+#starview {
+  text-align: right;
+}
+
+.tagstyle {
+  font-size: 14rpx;
+  margin: 10rpx 40rpx 10rpx 40rpx;
+  border: 5rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  align-content:center;
+  height: auto;
+  width: 40%;
+  overflow: hidden;
+  margin: 20rpx 0rpx 20rpx 50rpx;
+}
+
+.starcontent{
+  align-content:center;
+  width: 40%;
+  overflow: hidden;
+  margin: 20rpx 0rpx 20rpx 0rpx;
+}
+
+.line {
+  height: 5rpx;
+  margin: 7.5rpx auto;
+  /*width: 150rpx;
+height: 2rpx;*/
+  background-color: #d8d8d8;
+}
+
+#tabs {
+  background-color: #cccccc;
+}
+.tabview {
+  width: 650rpx;
+  border: 1rpx solid #d8d8d8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  padding: 30rpx 0rpx;
+}
+.introview {
+  width: 550rpx;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30rpx 30rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+.introkey {
+  color: rgb(10, 131, 201);
+  font-weight: bold;
+  font-size: 17px;
+}
+.introvalue {
+  font-size: 17px;
+}
+.introview2 {
+  display: flex;
+  flex-direction: column;
+  width: 550rpx;
+  margin: 0rpx auto;
+  padding: 30rpx 30rpx;
+}
+.introkey2 {
+  color:  rgb(10, 131, 201);
+  font-weight: bold;
+  font-size: 17px;
+}
+.introvalue2 {
+  margin-top: 20rpx;
+  font-size: 17px;
+  color: #7a7a7a;
+}
+
+
+
+
+/* components/wave/wave.wxss */
+
+/**index.wxss**/
+page {
+  background-color: #fff
+}
+
+.word{
+  margin: 30rpx;
+  font-size: 37rpx;
+  font-style: bold;
+  background: #116ec0;
+  color: #fff;
+
+}
+
+@keyframes head_float {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(30deg) translateX(10rpx);
+  }
+
+  75% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(10deg)
+  }
+}
+
+@keyframes head-run {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(1200rpx)
+  }
+}
+
+.enter {
+  animation: head-run 2s ease;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: relative;
+  height: 150rpx;
+  width: 100%;
+  background: #116ec0;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+  height: 40px;
+}
+
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+  height: 19px;
+}
+
+.bgBottom {
+  z-index: 1000;
+  height: 30px;
+  opacity: 0.9
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 2160rpx;
+  height: 100%;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveAnimation .waveTop {
+  animation: move_wave 30s linear infinite;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 24s linear infinite;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 12s linear infinite;
+}

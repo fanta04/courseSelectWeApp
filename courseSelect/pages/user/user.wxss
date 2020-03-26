@@ -1,0 +1,46 @@
+.top {
+  font-size: 20rpx;
+  height: 400rpx;
+  width: 100%;
+}
+
+.footer{
+  width: 100%;   font-size: 12px;
+  text-align: center;
+  color: #C6C6C6;
+  padding-top: 30rpx
+}
+.top{
+  height: 440rpx;
+  width:100%;
+  background:linear-gradient(rgb(58, 153, 207),#1261a1);
+  color: #fff;
+}
+
+.info{
+    color: #fff;
+    padding:32px;
+    background:#FFFFFF;
+    background:rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#116ec0,#87c1f1);
+    
+}
+.today{
+    height: 39%;
+      
+}
+.city{
+    color:white;
+    font-size: 16px;
+    text-align: right;
+    margin-right:10rpx;
+    margin-top:30rpx;
+}
+.temp{
+    font-size: 50px;
+    text-align: center;
+}
+.weather{
+    text-align: center;
+}
+

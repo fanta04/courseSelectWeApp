@@ -1,0 +1,20 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/courseDetail/courseDetail",
+    "pages/myCourse/myCourse",
+    "pages/user/user",
+    "pages/select/select",
+    "pages/openCourse/openCourse",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#116ec0",
+    "navigationBarTitleText": "Fanta | 公选课",
+    "navigationBarTextStyle": "white"
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

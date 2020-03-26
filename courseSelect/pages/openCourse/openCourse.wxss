@@ -1,0 +1,126 @@
+.btnOpen{
+  text-align: center;
+  margin: 140rpx;
+}
+
+
+/* components/wave/wave.wxss */
+
+/**index.wxss**/
+page {
+  background-color: #fff
+}
+
+.word{
+  margin: 30rpx;
+  font-size: 37rpx;
+  font-style: bold;
+  background: #116ec0;
+  color: #fff;
+
+}
+
+@keyframes head_float {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(30deg) translateX(10rpx);
+  }
+
+  75% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(10deg)
+  }
+}
+
+@keyframes head-run {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(1200rpx)
+  }
+}
+
+.enter {
+  animation: head-run 2s ease;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: relative;
+  height: 150rpx;
+  width: 100%;
+  background: #116ec0;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+  height: 40px;
+}
+
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+  height: 19px;
+}
+
+.bgBottom {
+  z-index: 1000;
+  height: 30px;
+  opacity: 0.9
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 2160rpx;
+  height: 100%;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveAnimation .waveTop {
+  animation: move_wave 30s linear infinite;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 24s linear infinite;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 12s linear infinite;
+}

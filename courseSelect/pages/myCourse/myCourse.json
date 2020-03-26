@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-button": "vant-weapp/button",
+    "van-field": "vant-weapp/field",
+    "van-popup": "vant-weapp/popup",
+    "van-dialog": "vant-weapp/dialog",
+    "van-cell": "vant-weapp/cell",
+    "van-picker": "vant-weapp/picker",
+    "van-icon": "vant-weapp/icon"
+  },
+  "enablePullDownRefresh": true
+}

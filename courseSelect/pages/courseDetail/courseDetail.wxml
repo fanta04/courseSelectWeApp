@@ -1,0 +1,37 @@
+
+<view class="waveWrapper waveAnimation" style='background-color:{{evening}}'>
+  <view class="word">课程详情</view>
+  <view class="waveWrapperInner bgTop">
+    <image class="wave waveTop" src="../../img/wave-top.png"></image>
+  </view>
+  <view class="waveWrapperInner bgBottom">
+    <image class="wave waveBottom" src="../../img/wave-bot.png"></image>
+  </view>
+</view>
+
+
+<view id="titleview">
+<!-- 以下是课程名块 -->
+<view id="coursename">{{courseName}}</view>
+
+</view>
+
+  <view class="tabview">
+    <view class="introview">
+      <text class="introkey">时间：</text>
+      <text class="introvalue">{{time}}</text>
+    </view>
+    
+    <view class="introview">
+      <text class="introkey">学分：</text>
+      <text class="introvalue">{{xuefen}}</text>
+    </view>
+    <view class="introview">
+      <text class="introkey">开课老师：</text>
+      <text class="introvalue">{{teacherName}}</text>
+    </view>
+    <view class="introview2">
+      <text class="introkey2">课程简介：</text>
+      <text class="introvalue2">{{desc}}</text>
+    </view>
+  </view>

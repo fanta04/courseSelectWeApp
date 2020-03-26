@@ -1,0 +1,69 @@
+<!--pages/add/add.wxml-->
+
+<view class="waveWrapper waveAnimation" style='background-color:{{evening}}'>
+<view class="word">我要开课</view>
+  <view class="waveWrapperInner bgTop">
+    <image class="wave waveTop" src="../../img/wave-top.png"></image>
+  </view>
+  <view class="waveWrapperInner bgBottom">
+    <image class="wave waveBottom" src="../../img/wave-bot.png"></image>
+  </view>
+</view>
+
+
+<van-cell-group class="botton">
+  <van-field
+    size="large"
+    value="{{ courseName }}"
+    required
+    label="课程名称"
+    placeholder="请输入课程名称"
+    bind:input="setName"
+    clearable	="true"
+   />
+  <van-field
+    size="large"
+    value="{{ time }}"
+    required
+    label="课程时间"
+    placeholder="请输入星期几 第几节课"
+    maxlength	="20"
+    bind:input="setTime"
+    clearable	="true"
+   />
+  <van-field
+    size="large"
+    label = "课程学分"
+    required
+    value="{{ xuefen }}"
+    placeholder="请输入课程学分"
+    bind:input="setXuefen"
+    type= "number"
+    clearable	="true"
+   />
+  <van-field
+    size="large"
+    label = "班级人数"
+    required
+    value="{{ num }}"
+    placeholder="请输入班级人数"
+    bind:input="setNum"
+    type= "number"
+    clearable	="true"
+   />
+
+  <van-field
+    size="large"
+    value="{{ desc }}"
+    label="课程简介"
+    type="textarea"
+    placeholder="请输入课程简介"
+    autosize
+    bind:input="setDesc"
+    clearable	="true"
+  />
+
+    <view>
+      <van-button color="#3b87dd"  bindclick="handleOpen"  block class="btnOpen">开课</van-button>
+    </view>
+</van-cell-group>
